@@ -1,0 +1,69 @@
+AUTOMATED UNIT TESTS
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_all_results_are_from_dataset (test_recommendation_system.RecommendationTests.test_all_results_are_from_dataset) ... ok
+test_best_match_is_the_martian_for_interstellar (test_recommendation_system.RecommendationTests.test_best_match_is_the_martian_for_interstellar) ... ok
+test_case_and_whitespace_are_ignored (test_recommendation_system.RecommendationTests.test_case_and_whitespace_are_ignored) ... ok
+test_limit_is_respected (test_recommendation_system.RecommendationTests.test_limit_is_respected) ... ok
+test_non_positive_limit_returns_empty_list (test_recommendation_system.RecommendationTests.test_non_positive_limit_returns_empty_list) ... ok
+test_selected_movie_is_not_recommended (test_recommendation_system.RecommendationTests.test_selected_movie_is_not_recommended) ... ok
+test_unknown_movie_returns_empty_list (test_recommendation_system.RecommendationTests.test_unknown_movie_returns_empty_list) ... ok
+test_empty_genres (test_recommendation_system.SimilarityTests.test_empty_genres) ... ok
+test_identical_genres_are_100_percent (test_recommendation_system.SimilarityTests.test_identical_genres_are_100_percent) ... ok
+test_no_shared_genres_are_zero (test_recommendation_system.SimilarityTests.test_no_shared_genres_are_zero) ... ok
+test_partial_overlap (test_recommendation_system.SimilarityTests.test_partial_overlap) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK
+
+CLI SMOKE TEST
+================================================
+       SIMPLE MOVIE RECOMMENDATION SYSTEM
+              CodeOrbitTech — Task 4
+================================================
+
+Available movies:
+ 1. Interstellar
+ 2. The Martian
+ 3. Gravity
+ 4. Arrival
+ 5. Inception
+ 6. The Dark Knight
+ 7. Titanic
+ 8. The Notebook
+ 9. Superbad
+10. The Hangover
+
+Enter a movie title (or type 'list' to show movies, 'q' to quit): 
+Recommendations for: Interstellar
+------------------------------------------------
+1. The Martian            Similarity: 100.0%
+2. Gravity                Similarity:  50.0%
+3. Arrival                Similarity:  50.0%
+
+Note: Scores compare genre overlap, not audience ratings or overall quality.
+
+Enter a movie title (or type 'list' to show movies, 'q' to quit): Thank you for using the Movie Recommendation System!
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
+Unit test exit code: 0
+CLI smoke test exit code: 0

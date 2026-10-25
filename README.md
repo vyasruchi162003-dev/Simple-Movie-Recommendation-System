@@ -1,6 +1,6 @@
 # Simple Movie Recommendation System
 
-**Project:** CodeOrbitTech AI Internship — Task 4  
+**Project:** Simple Movie Recommendation System 
 **Type:** Beginner-friendly content-based recommendation system  
 **Language:** Python 3  
 **Dependencies:** Python standard library only
